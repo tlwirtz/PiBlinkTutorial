@@ -18,7 +18,7 @@ namespace PiBlinkTutorial
 
             while (true)
             {
-                //controller.Write(pin, ((ledOn) ? PinValue.High : PinValue.Low));
+                controller.Write(pin, ((ledOn) ? PinValue.High : PinValue.Low));
                 Thread.Sleep(1000);
                 ledOn = !ledOn;
             }
